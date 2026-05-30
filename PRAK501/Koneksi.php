@@ -2,10 +2,10 @@
 date_default_timezone_set('Asia/Makassar');
 
 function getKoneksi() {
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db   = "prak501"; 
+    $host = "sql312.infinityfree.com";
+    $user = "if0_41986861";
+    $pass = "CW4h9d66W2j";
+    $db   = "if0_41986861_Modul5";
 
     $conn = mysqli_connect($host, $user, $pass, $db);
 

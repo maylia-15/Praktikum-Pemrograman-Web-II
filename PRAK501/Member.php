@@ -1,4 +1,5 @@
 <?php
+
 require 'Model.php';
 
 if (isset($_GET['hapus'])) {

@@ -1,21 +1,13 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
+$host = "sql312.infinityfree.com";
+$user = "if0_41986861";
+$pass = "CW4h9d66W2j";
+$db   = "if0_41986861_Modul5";
 
-$conn = mysqli_connect($host, $user, $pass);
+$conn = mysqli_connect($host, $user, $pass, $db);
 if (!$conn) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
-
-$sql_db = "CREATE DATABASE IF NOT EXISTS prak501";
-if (mysqli_query($conn, $sql_db)) {
-    echo "Database 'prak501' berhasil dibuat.<br>";
-} else {
-    echo "Error membuat database: " . mysqli_error($conn) . "<br>";
-}
-
-mysqli_select_db($conn, "prak501");
 
 $sql_member = "CREATE TABLE IF NOT EXISTS member (
     id_member INT PRIMARY KEY AUTO_INCREMENT,
@@ -53,5 +45,5 @@ if (mysqli_query($conn, $sql_peminjaman)) {
     echo "Tabel 'peminjaman' berhasil dibuat.<br>";
 }
 
-echo "<br>Selesai! Sekarang kamu bisa menutup halaman ini dan kembali membuka halaman Member.php";
+echo "<br>Selesai! Sekarang kamu bisa membuka halaman Member.php";
 ?>
